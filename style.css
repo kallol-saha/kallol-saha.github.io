@@ -47,7 +47,7 @@ table {
 /**************************************************/
 
 #main {
-    width: 960px;
+    width: 1180px;
     margin: 0px auto;
 }
 
@@ -59,8 +59,8 @@ table {
 
 /* Profile Description */
 p {
-    font-size: 14px;
-    line-height: 24px;
+    font-size: 15px;
+    line-height: 26px;
 }
 
 /* Hyperlink */
@@ -83,7 +83,7 @@ b, strong {
 
 /* Headers for each section */
 h1 {
-    font-size: 24px;
+    font-size: 26px;
     line-height: 24px;
     width: 100%;
     margin: 30px auto 20px 30px;
@@ -95,7 +95,7 @@ h1 {
 /* Top-right corner HOME / LAB */
 #header {
     height: 58px;
-    font-size: 14px;
+    font-size: 15px;
     line-height: 58px;
     padding-top: 42px;
     text-align: right;
@@ -128,6 +128,11 @@ h1 {
     text-align: center;
 }
 
+/* Own column beside the floated photo, so long bios don't wrap under it */
+#profile-intro {
+    display: flow-root;
+}
+
 #profile img {
     width: 220px;
     border-radius: 10px;
@@ -136,7 +141,7 @@ h1 {
 
 /* Main Profile Name */
 #profile-name {
-    font-size: 28px;
+    font-size: 30px;
     font-weight: bold;
     line-height: 24px;
     margin-bottom: 20px;
@@ -207,8 +212,8 @@ h1 {
 /**************************************************/
 
 ul {
-    font-size: 14px;
-    line-height: 24px;
+    font-size: 15px;
+    line-height: 26px;
     list-style-position: inside;
     list-style-type: disc;
     margin-left: 30px;
@@ -220,7 +225,7 @@ ul {
 .showBtn {
     margin-top: 10px;
     margin-bottom: 30px;
-    font-size: 14px;
+    font-size: 15px;
     line-height: 24px;
     float: left;
 }
@@ -255,7 +260,7 @@ ul {
 
 h3 {
     margin-left:  30px;
-    font-size: 16px;
+    font-size: 17px;
     line-height: 26px;
     margin-bottom:  15px;
 }
@@ -300,7 +305,7 @@ h3 {
 
 .research-proj {
     margin-left: 30px;
-    width: 100%;
+    width: calc(100% - 30px);
     display: table;
 
 }
@@ -335,7 +340,7 @@ h3 {
 }
 .research-proj-title {
     color: #000000;
-    font-size: 18px;
+    font-size: 19px;
     line-height: 26px;
 }
 
@@ -344,8 +349,8 @@ h3 {
 }
 
 .research-proj p {
-    font-size: 14px;
-    line-height: 24px;
+    font-size: 15px;
+    line-height: 26px;
 }
 
 .research-proj p strong {
@@ -396,7 +401,7 @@ h3 {
     float: left;
     text-align: center;
     margin: 0 30px 30px 0;
-    font-size: 14px;
+    font-size: 15px;
     line-height: 20px;
 }
 
@@ -415,4 +420,45 @@ h3 {
 .student-profile img {
     width: 100%;
     border-radius: 10px;
+}
+/* Highlighted inline note */
+.highlight-note {
+    background-color: #f7eec5;
+    padding: 2px 5px;
+    border-radius: 3px;
+}
+
+/* Publications: larger thumbnails, semibold titles */
+.research .research-thumb {
+    width: 220px;
+    margin-top: 4px;
+    padding-right: 28px;
+}
+
+.research .research-thumb img {
+    display: block;
+    border-radius: 8px;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12);
+}
+
+.research .research-proj-title {
+    font-weight: 600;
+}
+
+/* Selected publications: the most prominent entries on the page */
+#selected-pubs .research-proj {
+    margin-bottom: 14px;
+}
+
+#selected-pubs .research-thumb {
+    width: 250px;
+    padding-right: 28px;
+}
+
+#selected-pubs .research-proj-title {
+    line-height: 28px;
+}
+
+#selected-pubs .research-proj p {
+    margin-top: 4px;
 }
