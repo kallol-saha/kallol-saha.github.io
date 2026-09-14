@@ -508,6 +508,11 @@ h3 {
         text-align: center;
     }
 
+    /* keep names like "Prof. Jiaoyang Li" or "The Robotics Institute, CMU" on one line */
+    #profile-intro a {
+        white-space: nowrap;
+    }
+
     p,
     ul,
     .research-proj p {
